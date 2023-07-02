@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task_003 {
@@ -8,7 +7,7 @@ public class Task_003 {
         File file = new File("C:\\Users\\Константин\\Desktop\\GB\\Java\\JavaHomeWork\\JavaHomeWork\\File2.txt");
         Scanner scanner = new Scanner(file);
         String line = scanner.nextLine();
-        line = line.replaceAll("[{\"\"}\\[\\]]", "");
+        line = line.replaceAll("[{\"}\\[\\]]", "");
         line = line.replace("фамилия:", "");
         line = line.replace("оценка:", "");
         line = line.replace("предмет:", "");
