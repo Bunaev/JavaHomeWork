@@ -7,6 +7,7 @@ public class Task_003 {
         File file = new File("C:\\Users\\Константин\\Desktop\\GB\\Java\\JavaHomeWork\\JavaHomeWork\\File2.txt");
         Scanner scanner = new Scanner(file);
         String line = scanner.nextLine();
+        scanner.close();
         line = line.replaceAll("[{\"}\\[\\]]", "");
         line = line.replace("фамилия:", "");
         line = line.replace("оценка:", "");

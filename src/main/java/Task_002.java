@@ -7,6 +7,7 @@ public class Task_002 {
         File file = new File("C:\\Users\\Константин\\Desktop\\GB\\Java\\JavaHomeWork\\JavaHomeWork\\File.txt");
         Scanner scanner = new Scanner(file);
         String line = scanner.nextLine();
+        scanner.close();
         line = line.replace(":", " = ");
         line = line.replaceAll("[{\"\"}]", "");
         String[] result = line.split(", ");
