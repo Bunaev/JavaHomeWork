@@ -9,12 +9,12 @@ public class Task_002 {
         String line = scanner.nextLine();
         scanner.close();
         line = line.replace(":", " = ");
-        line = line.replaceAll("[{\"\"}]", "");
+        line = line.replaceAll("[{\"}]", "");
         String[] result = line.split(", ");
         String req = "select * from students where ";
         for (int i = 0; i < result.length; i++) {
             boolean bool = result[i].contains("null");
-            if (bool == false) {
+            if (!bool) {
                 req = req + result[i]+ ", ";
 
             }
