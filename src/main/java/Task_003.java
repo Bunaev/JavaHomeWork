@@ -13,8 +13,8 @@ public class Task_003 {
         line = line.replace("оценка:", "");
         line = line.replace("предмет:", "");
         String[] result = line.split(",");
-        System.out.printf("Студент %s получил %s по предмету %s\n", result[0], result[1], result[2]);
-        System.out.printf("Студент %s получил %s по предмету %s\n", result[3], result[4], result[5]);
-        System.out.printf("Студент %s получил %s по предмету %s\n", result[6], result[7], result[8]);
+        for (int i = 0; i < result.length-2; i+=3) {
+            System.out.printf("Студент %s получил %s по предмету %s\n", result[i], result[i+1], result[i+2]);
+        }
     }
 }
