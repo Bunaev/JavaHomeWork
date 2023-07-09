@@ -34,7 +34,7 @@ public class Task_005 {
         System.out.println("\n");
         String ageSort = scanner.nextLine();
         if (ageSort.toLowerCase().contains("д")) {
-            tmp.sort(Comparator.comparingInt(age::get));
+//            tmp.sort(Comparator.comparingInt(age::get));
             for (int i = 0; i < age.size() - 1; i++) {
                 for (int j = i + 1; j < age.size() - 1; j++) {
                     if (age.get(j) < age.get(j)) {
